@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 240px; margin: 0; padding: 14px; font: 14px/1.5 system-ui, sans-serif; color: #1f2937; }
+    h1 { margin: 0 0 12px; font-size: 15px; }
+    label { display: block; margin-bottom: 4px; color: #6b7280; font-size: 12px; }
+    select, button { width: 100%; box-sizing: border-box; padding: 6px 8px; font: inherit; border-radius: 6px; }
+    select { border: 1px solid #d1d5db; margin-bottom: 12px; }
+    button { border: 0; background: #4c8bf5; color: #fff; cursor: pointer; }
+    button:hover { background: #3b78e0; }
+    .tip { margin: 10px 0 0; color: #6b7280; font-size: 12px; }
+    .error { color: #dc2626; }
+  </style>
+</head>
+<body>
+  <h1>网页双语翻译</h1>
+  <label for="target">翻译成</label>
+  <select id="target"></select>
+  <button id="toggle">翻译此页 / 显示原文</button>
+  <p class="tip" id="tip">快捷键 Alt+T，或在网页上右键使用。</p>
+  <script src="popup.js"></script>
+</body>
+</html>
